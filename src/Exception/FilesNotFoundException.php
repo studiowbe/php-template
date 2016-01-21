@@ -7,7 +7,7 @@ class FilesNotFoundException extends \Exception
 
     private $files;
 
-    public function __construct(array $files)
+    public function __construct(array $files, $code = 0, \Exception $previous = null)
     {
         $this->files = $files;
         $fnames = implode(', ', $files);
