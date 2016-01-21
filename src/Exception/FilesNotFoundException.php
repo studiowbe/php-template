@@ -1,6 +1,6 @@
 <?php
 
-namespace Studiow\PHPTemplate;
+namespace Studiow\PHPTemplate\Exception;
 
 class FilesNotFoundException extends \Exception
 {

@@ -1,0 +1,1 @@
+[/content][footer]<?= $footer; ?>[/footer]

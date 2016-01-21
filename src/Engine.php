@@ -2,6 +2,8 @@
 
 namespace Studiow\PHPTemplate;
 
+use Studiow\PHPTemplate\Exception\FilesNotFoundException;
+
 class Engine
 {
 
@@ -52,6 +54,7 @@ class Engine
                 return $this->get($filename, $data);
             }
         }
+        throw new FilesNotFoundException($filenames);
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace Studiow\PHPTemplate;
 
-use Studiow\PHPTemplate\FileNotFoundException;
+use Studiow\PHPTemplate\Exception\FileNotFoundException;
 
 class Template
 {
