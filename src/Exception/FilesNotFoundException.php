@@ -9,7 +9,7 @@ class FilesNotFoundException extends \Exception
 
     public function __construct(array $files)
     {
-        $this->files = files;
+        $this->files = $files;
         $fnames = implode(', ', $files);
         parent::__construct("No file in {$fnames} could be found", $code, $previous);
     }
